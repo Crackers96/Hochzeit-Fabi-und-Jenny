@@ -50,7 +50,7 @@ html, body {
     }
 
 body {
-    background-image: url('/images/Startbild.jpg'); /* Hier den Pfad zu deinem Bild angeben */
+    background-image: url('images/Startbild.jpg'); /* Hier den Pfad zu deinem Bild angeben */
     background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm ausfüllt */
     background-position: center; /* Das Bild wird zentriert */
     background-attachment: fixed; /* Das Bild bleibt fixiert, wenn man scrollt */
@@ -62,7 +62,7 @@ body {
 }
 @media (max-width: 768px) {
 body {
-    background-image: url('/images/2.png'); /* Hier den Pfad zu deinem Bild angeben */
+    background-image: url('images/2.png'); /* Hier den Pfad zu deinem Bild angeben */
         background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm ausfüllt */
     background-position: center; /* Das Bild wird zentriert */
     background-attachment: fixed; /* Das Bild bleibt fixiert, wenn man scrollt */
