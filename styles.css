@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url('/images/background.jpg'); /* Hier den Pfad zu deinem Bild angeben */
+    background-image: url('/root/images/background.jpg'); /* Hier den Pfad zu deinem Bild angeben */
     background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm ausfüllt */
     background-position: center center; /* Das Bild wird zentriert */
     background-attachment: fixed; /* Das Bild bleibt fixiert, wenn man scrollt */
