@@ -1,0 +1,76 @@
+﻿/* Stellt sicher, dass die Seite den gesamten Bildschirm ausfüllt */
+html, body {
+    height: 100%; /* Die gesamte Höhe der Seite nutzen */
+    margin: 0; /* Keine Standard-Abstände */
+    overflow: hidden; /* Verhindert Scrollen */
+}
+
+/* Container für die Startseite */
+.startseite-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Bild soll nicht über den Rand hinaus scrollen */
+}
+
+/* Das Bild soll den gesamten Bildschirm ausfüllen */
+.startbild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Breite auf 100% setzen */
+    height: 100%; /* Höhe auf 100% setzen */
+    object-fit: cover; /* Bild bleibt skaliert und verhält sich entsprechend */
+}
+
+/* Der Button wird über dem Bild positioniert */
+.button-container {
+    position: absolute;
+    bottom: 20px; /* Button 20px vom unteren Rand */
+    left: 50%;
+    transform: translateX(-50%); /* Button wird horizontal zentriert */
+    z-index: 2; /* Stellt sicher, dass der Button über dem Bild liegt */
+}
+
+/* Der Weiter-Button */
+.weiter-button {
+    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparente Hintergrundfarbe */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .weiter-button:hover {
+        background-color: rgba(0, 0, 0, 0.9); /* Button wird dunkler, wenn man mit der Maus drüber fährt */
+    }
+
+body {
+    background-image: url('/images/Startbild.jpg'); /* Hier den Pfad zu deinem Bild angeben */
+    background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm ausfüllt */
+    background-position: center; /* Das Bild wird zentriert */
+    background-attachment: fixed; /* Das Bild bleibt fixiert, wenn man scrollt */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f5f1;
+    color: #333;
+}
+@media (max-width: 768px) {
+body {
+    background-image: url('/images/2.png'); /* Hier den Pfad zu deinem Bild angeben */
+        background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm ausfüllt */
+    background-position: center; /* Das Bild wird zentriert */
+    background-attachment: fixed; /* Das Bild bleibt fixiert, wenn man scrollt */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f5f1;
+    color: #333;
+
+}
+}

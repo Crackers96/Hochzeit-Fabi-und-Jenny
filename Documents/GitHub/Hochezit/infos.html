@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Hochzeit</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navigationsleiste Styling */
+
+nav {
+           background-color: rgba(248, 192, 192, 0.4); /* Pastellrot */
+            padding: 25px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border: 2px solid white; /* Weiße Umrandung */
+            border-radius: 5px; /* Ecken abrunden */
+            display: flex;
+
+            justify-content: space-betwenn;
+}
+               nav a {
+                margin: 0 15px;
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 10px;
+                border: 2px solid white; /* Weiße Umrandung */
+                border-radius: 5px; /* Ecken abrunden */
+            }
+                           nav a:hover {
+                    color: black;
+                    background-color: rgba(248, 192, 192, 1.0);
+                    border: 2px solid black; 
+                    padding: 10px;
+                }
+                #menu-toggle {
+                    display:none;
+                    font-size: 24px;
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                    cursor: pointer;
+                }
+                @media (max-width: 768px){
+                    #menu-toggle {
+                    display:block;
+                    font-size: 25px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    }
+                    #nav-links {
+                        display: none;
+                        flex-direction: column;
+
+                        gap: 1px;
+                        padding: 1px;
+                        top: 5px;
+                        left: 0;
+                        right: 0;
+                        width: 100%;
+                    }
+                    #nav-links.show {
+                        display: flex;
+  
+                    }
+                    nav a {
+                        width: 100%;
+                        text-allign: center;
+                        margin: 5px 0;
+                    }
+                    nav {
+                        
+                                   background-color: rgba(248, 192, 192, 1.0); /* Pastellrot */
+                                   padding: 1px;
+                                   top: 0;
+                                   left: 0;
+                                   width: 100%;
+                                   z-index: 1000;
+                               }
+                               body {
+                                   padding-top: 30px;
+                                 margin-top: -60px;
+                               }
+                }
+
+ 
+
+ 
+
+        /* Buttons Styling */
+        .reserve-button {
+            padding: 10px 20px;
+            background-color: #f8c0c0;
+            color: white;
+            border: 2px solid white; /* Dunkelgraue Umrandung */
+            border-radius: 5px; /* Ecken abrunden */
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+            .reserve-button:hover {
+                background-color: #ff7f7f;
+                border: 2px solid #ff7f7f; /* Umrandung bei Hover */
+            }
+
+        /* Andere Stile */
+        section {
+            padding: 60px 20px;
+        }
+
+            section h1 {
+                color: #333;
+            }
+    </style>
+</head>
+<nav>
+    <button id="menu-toggle" aria-label="Navigation umschalten" >&#9776;</button>
+    <div id="nav-links">
+        <a href="#details">Details</a>
+        <a href="#trauung">Wo ist die Trauung?</a>
+        <a href="#feier">Wo feiern wir?</a>
+        <a href="#ablauf">Grober Ablauf</a>
+        <a href="#geschenke">Geschenke</a>
+        <a href="#zimmer">Übernachtungen</a>
+        <a href="#essen">Essen</a>
+        <a href="#fotos">Fotos</a>
+        </div>
+    </nav>
+<body>
+    <!-- Navigationsleiste -->
+    
+
+    <header>
+        <h1>Willkommen zu unserer Hochzeit!</h1>
+        <!-- Countdown-Element -->
+        <div id="countdown-container">
+            <p id="countdown-text"></p>
+        </div>
+    </header>
+
+    <main>
+
+
+        <!-- Abschnitt Details -->
+        <section id="details">
+            <h1>Details</h1>
+            <p><strong>Datum:</strong> 26. Juli 2025</p>
+            <p><strong>Uhrzeit:</strong> 13:30 Uhr</p><br />
+        </section>
+
+        <!-- Abschnitt Trauung -->
+        <section id="trauung">
+            <h1>Wo ist die Trauung?</h1>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5188.199849695921!2d8.351417912578865!3d49.44482837129834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479634cea2f9ddfb%3A0x7415e18b64d6526d!2sProtestantische%20Kirche%20Mutterstadt%20-%20Prot.%20Kirchengemeinde%20Mutterstadt!5e0!3m2!1sde!2sde!4v1732375496689!5m2!1sde!2sde"
+                        class="map-iframe"
+                        allowfullscreen=""
+                        loading="lazy">
+                </iframe>
+            </div>
+            <p>Protestantische Kirche, Mutterstadt</p><br />
+        </section>
+
+        <!-- Abschnitt Feier -->
+        <section id="feier">
+            <h1>Wo feiern wir im Anschluss?</h1>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.113770715868!2d8.462937712577945!3d49.42566307129543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c97bd8b312f3%3A0xacc846b3538df678!2sHotel%20Darstein!5e0!3m2!1sde!2sde!4v1732375702448!5m2!1sde!2sde"
+                        class="map-iframe"
+                        allowfullscreen=""
+                        loading="lazy">
+                </iframe>
+            </div>
+            <p>Hotel Darstein, Altrip</p><br />
+        </section>
+
+        <!-- Abschnitt Grober Ablauf -->
+        <section id="ablauf">
+            <h1>Grober Ablauf</h1>
+            <ul>
+                <li><strong>14:00</strong> Trauung</li>
+                <li><strong>15:30</strong> Abfahrt ins Hotel Darstein</li>
+                <li><strong>16:00</strong> Sektempfang & Snacks</li>
+                <li><strong>16:30</strong> kleine Hochzeitsolympiade</li>
+                <li><strong>18:30</strong> Abendessen</li>
+                <li><strong>20:00</strong> Abendprogramm</li>
+                <li><strong>22:00</strong> Partytime</li>
+            </ul>
+        </section>
+
+        <!-- Weitere Infos -->
+        <section id="geschenke">
+            <h1>Weitere Infos</h1>
+            <h4>Geschenke</h4>
+            Da wir ein weiteres Stück Welt entdecken wollen, freuen wir uns über einen Zuschuss zu unserer Hochzeitsreise :)
+        </section>
+
+        <!-- Übernachtungen -->
+        <section id="zimmer">
+            <h4>Übernachtungen</h4>
+            <p>Falls ihr übernachten wollt, könnt ihr euch hier ein Zimmer buchen. Unter Angabe unserer Hochzeit bekommt ihr dann einen Rabatt von 30% auf euer Zimmer! </p>
+            <button class="reserve-button" onclick="window.open('https://www.booking.com/hotel/de/hotel-darstein.de.html?label=hotel-darstein-t96Lo4zuQ96Ggx36XtNp9gS261369645020%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2009482408685%3Akwd-4179827061%3Alp9190018%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YTptaWLFanNKScTlTR7Hrwg&sid=b4262abcb631bec14fa9795109474f87&aid=311092&ucfs=1&arphpl=1&checkin=2025-07-26&checkout=2025-07-27&dest_id=-1822951&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=45d970c89cdd0386&srepoch=1732377751&all_sr_blocks=44876015_226110636_2_33_0&highlighted_blocks=44876015_226110636_2_33_0&matching_block_id=44876015_226110636_2_33_0&sr_pri_blocks=44876015_226110636_2_33_0__11500&from=searchresults', '_blank')">Zimmer reservieren</button>
+        </section>
+
+        <!-- Essen -->
+        <section id="essen">
+            <h4>Essen</h4>
+            <p>Falls ihr Unverträglichkeiten habt oder ihr euch vegetarisch/ vegan ernährt, lasst es uns bitte wissen. Ihr bekommt dann ggf. eigenes Essen.</p>
+        </section>
+
+        <!-- Fotos -->
+        <section id="fotos">
+            <h4>Fotos</h4>
+            <p>Damit wir uns immer an unsere Hochzeit erinnern können, würden wir uns sehr freuen, wenn ihr eure Fotos mit uns teilt! :)</p>
+            <button class="reserve-button" onclick="window.open('https://drive.google.com/drive/folders/17jHfYgnmXJVG_dCoOr5fZeqXjfeZeUhZ?usp=sharing', '_blank')">Bilder hochladen</button>
+        </section>
+    </main>
+
+    <!-- Countdown-Skript -->
+    <script>
+        const weddingDate = new Date("2025-07-26T00:00:00"); // Hochzeitstermin
+        const countdownElement = document.getElementById('countdown-text');
+
+        function updateCountdown() {
+            const now = new Date();
+            const diff = weddingDate - now;
+
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24)); // Nur Tage berechnen
+                countdownElement.textContent = `Nur noch ${days} Tage!`;
+            } else {
+                countdownElement.textContent = "Der große Tag ist da! 🎉";
+            }
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000); // Aktualisierung jede Sekunde
+    </script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        menuToggle.addEventListener('click',() => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
