@@ -1,0 +1,88 @@
+﻿body {
+    background-image: url('/images/background.jpg'); /* Hier den Pfad zu deinem Bild angeben */
+    background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm ausfüllt */
+    background-position: center center; /* Das Bild wird zentriert */
+    background-attachment: fixed; /* Das Bild bleibt fixiert, wenn man scrollt */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f5f1;
+    color: #333;
+}
+
+header {
+    /*background-color: #f8c0c0; */
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    ul li {
+        margin: 5px 0;
+    }
+/* Startseite-Stil */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Hintergrundfarbe */
+}
+
+.startseite-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.startbild {
+    width: 80%; /* Bild wird 80% der Bildschirmbreite einnehmen */
+    max-width: 600px; /* Maximale Breite für das Bild */
+    border-radius: 10px; /* Optional, für abgerundete Ecken */
+}
+
+
+
+#countdown-container {
+    text-align: center;
+    
+}
+
+.map-container {
+    text-align: left;
+    margin: 40px 0;
+}
+
+.map-iframe {
+    width: 100%; /* Breite auf 100% setzen */
+    max-width: 600px; /* Maximalbreite */
+    height: 450px; /* Höhe der Karte */
+    border: 2px solid white; /* Schwarzer Rahmen mit 4px Stärke */
+    border-radius: 8px; /* Optional: Abgerundete Ecken */
+}
+.reserve-button {
+    background-color: #ffba97; /* Sanftes Rot */
+    color: white; /* Weiße Schrift */
+    font-size: 16px; /* Schriftgröße */
+    padding: 10px 20px; /* Innenabstand */
+    border: none; /* Kein Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    cursor: pointer; /* Zeigt den Zeiger-Cursor */
+    transition: background-color 0.3s ease; /* Sanfter Übergang */
+}
+
+    .reserve-button:hover {
+        background-color: #ff4d4d; /* Dunkleres Rot bei Hover */
+    }
+
+ 
